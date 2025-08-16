@@ -1,0 +1,9 @@
+tunnel: 74c5b7c9-0337-4f38-8a5c-78e7475f7b68  # Replace with your tunnel UUID
+ingress:
+  - hostname: s8r.k3p.dev
+    service: https://localhost:8082  # WordPress
+  - hostname: p4l.k3p.dev
+    service: https://localhost:8084  # PayPal Microfrontend
+  - hostname: w7s.k3p.dev
+    service: https://localhost:8086  # Second Microfrontend
+  - service: http_status:404  # Catch-all for any other requests

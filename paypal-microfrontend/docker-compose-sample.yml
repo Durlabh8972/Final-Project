@@ -1,0 +1,8 @@
+services:
+  paypal:
+    build: .
+    ports:
+      - 8084:8080
+    environment:
+      - PAYPAL_CLIENT_ID= AX0RfNDzXT6m2VoYGbPUDyXhNSiaruAlMT89y8KeiK5hAS3mwXCxBTm_RV7biB_6oixhXZZO_XqYGiAL
+      - PAYPAL_CLIENT_SECRET=EMNChOfOmtLEjdZiN_lOnra7Bd06iaj7VHVVxLis5a2WSgZGfCQI3KoNP_fQQCmOmVVLleEvG7lsOOSv
